@@ -1,0 +1,131 @@
+body {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+body .hidden {
+  display: none !important;
+}
+body .form {
+  text-align: center;
+}
+body .form h1 {
+  margin: 10px 0;
+}
+body .form p {
+  margin-top: 0;
+}
+body .form .toggle {
+  position: relative;
+  top: 170px;
+  left: 330px;
+}
+body nav {
+  text-align: center;
+}
+body nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+body nav ul li {
+  padding: 8px 20px;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #e3cab5;
+  border-radius: 18px;
+  margin: 10px 10px;
+}
+body nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+body nav ul li:hover {
+  cursor: pointer;
+}
+body nav ul li.smaller {
+  font-size: 20px;
+}
+body .content {
+  width: 100%;
+  background-color: #44525f;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+.center .info {
+  color: #fff;
+  padding: 30px 0;
+}
+.center .info .location,
+.center .info .time {
+  padding: 5px 0;
+}
+.center .info .location {
+  font-size: 20px;
+}
+
+.forecastInfo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 35px;
+}
+
+.weatherInfo {
+  max-width: 500px;
+  min-width: 300px;
+  background-color: #f3ddcd;
+  padding: 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+}
+.weatherInfo .date {
+  font-weight: bold;
+  text-align: center;
+}
+.weatherInfo .temp {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 15px 0 10px;
+}
+.weatherInfo .condition {
+  display: flex;
+}
+.weatherInfo .condition img {
+  width: 50px;
+  padding-left: 10px;
+}
+.weatherInfo .condition .text {
+  margin: auto 0;
+}
+.weatherInfo .feelsLike {
+  padding-bottom: 15px;
+}
+.weatherInfo .moreDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.weatherInfo .moreDetails .detailBox {
+  flex-grow: 1;
+}
+.weatherInfo .moreDetails .detailBox .detail {
+  display: flex;
+  width: 100%;
+  padding: 5px 0;
+}
+.weatherInfo .moreDetails .detailBox .detail .value {
+  text-align: right;
+  flex-grow: 1;
+}
+.weatherInfo .moreDetails .detailBox.larger {
+  min-width: 200px;
+}
+.weatherInfo .moreDetails .detailBox.first {
+  padding-right: 25px;
+}

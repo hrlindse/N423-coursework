@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather | Project</title>
+    <link rel="stylesheet" href="css/styles.css"></style>
+  </head>
+  <body>
+    <div class="form">
+      <h1>Get Weather</h1>
+      <p>Enter your zip code to get accurate weather.</p>
+
+      <div class="inputBox">
+        <input id="zipcode" type="text" />
+      </div>
+      <button class="toggle hidden" id="toggleMetric">
+        Metric
+      </button>
+    </div>
+    
+
+  <nav>
+    <ul>
+      <li id="getWeather">Current</li>
+      <li id="getOneDayForecast">Today's Forecast</li>
+      <li id="getThreeDayForecast">3-Day Forecast</li>
+      <li><a href="https://www.weatherapi.com/" target="_blank">Weather API</a></li>
+      <li class="smaller">Login</li>
+      <li class="smaller">Signup</li>
+
+    </ul>
+  </nav>
+    <div class="content"></div>
+
+    <script src="lib/jquery-3.5.1.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

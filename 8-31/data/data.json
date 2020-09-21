@@ -1,0 +1,52 @@
+{
+  "students": [
+    {
+      "name": "Holly",
+      "grade": "senior",
+      "classes": [
+        {
+          "className": "115"
+        },
+        {
+          "className": "215"
+        }
+      ]
+    },
+    {
+      "name": "Student2",
+      "grade": "junior",
+      "classes": [
+        {
+          "className": "116"
+        },
+        {
+          "className": "216"
+        }
+      ]
+    },
+    {
+      "name": "Student3",
+      "grade": "freshman",
+      "classes": [
+        {
+          "className": "117"
+        },
+        {
+          "className": "217"
+        }
+      ]
+    },
+    {
+      "name": "Student4",
+      "grade": "freshman",
+      "classes": [
+        {
+          "className": "118"
+        },
+        {
+          "className": "218"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "characters": [
+    { "name": "Jay Gatsby" },
+    { "name": "Daisy Buchanan" },
+    { "name": "Tom Buchanan" }
+  ]
+}

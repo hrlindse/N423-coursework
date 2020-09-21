@@ -1,0 +1,57 @@
+body {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans",
+    "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+    "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+
+  .hidden {
+    display: none !important;
+  }
+  .form {
+    text-align: center;
+    h1 {
+      margin: 10px 0;
+    }
+    p {
+      margin-top: 0;
+    }
+    .toggle {
+      position: relative;
+      top: 170px;
+      left: 330px;
+    }
+  }
+  nav {
+    text-align: center;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      li {
+        padding: 8px 20px;
+        font-weight: bold;
+        font-size: 22px;
+        background-color: #e3cab5;
+        border-radius: 18px;
+        margin: 10px 10px;
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+      li:hover {
+        cursor: pointer;
+      }
+      li.smaller {
+        font-size: 20px;
+      }
+    }
+  }
+  .content {
+    width: 100%;
+    background-color: #44525f;
+  }
+}
