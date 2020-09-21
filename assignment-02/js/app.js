@@ -1,6 +1,6 @@
 var apiKey = "ebf07185046341b9a23193427201409";
-var currentBaseURL = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=`;
-var forecastBaseURL = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=`;
+var currentBaseURL = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=`;
+var forecastBaseURL = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=`;
 
 function getWeather(fullURL) {
   if ($(".toggle").hasClass("hidden")) {
