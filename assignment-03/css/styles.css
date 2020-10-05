@@ -1,0 +1,70 @@
+body,
+button {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans",
+    "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+    "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+form {
+  padding: 25px 0;
+  margin: 40px 0 0;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.formFields {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 5px;
+}
+
+input {
+  margin: 5px 0 15px;
+}
+
+fieldset {
+  border: none;
+  margin: 0px 0 5px;
+  padding-left: 0;
+  padding-bottom: 0;
+  position: relative;
+  left: -13px;
+}
+
+legend {
+  padding-left: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 0;
+}
+
+.buttons button {
+  margin: 0 30px;
+}
+
+#students {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.studentContainer {
+  padding: 15px;
+  width: 200px;
+}

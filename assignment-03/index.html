@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage Example</title>
+    <link rel="stylesheet" href="css/styles.css"></style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" action="javascript:0;">
+        <div class="formFields">
+          <label for="name"
+            >Name: <br /><input type="text" id="name" required
+          /></label>
+          <br />
+          <label for="age">Age: <br /><input type="text" id="age" required /></label>
+          <br />
+          <label for="phone"
+            >Phone Number: <br /><input type="tel" id="phone" required
+          /></label>
+          <br />
+          <label for="email"
+            >Email: <br /><input type="email" id="email" required
+          /></label>
+          <br />
+          <label for="address"
+            >Address: <br /><input type="text" id="address" required
+          /></label>
+          <br />
+          <fieldset>
+            <legend>Enter your classes:</legend>
+            <div id="classes">
+              <input type="text" name="class" class="class" /><br />
+            </div>
+            <button type="button" id="addField">Add another class</button>
+          </fieldset>
+        </div>
+        
+        <br />
+        
+        <button type="button" id="submit">Add Student</button>
+      </form>
+      <div class="buttons">
+        <button type="button" id="view">View Students</button><br />
+        <button type="button" id="reset">Reset Students</button> 
+      </div>
+
+      
+    </div>
+    <div id="students"></div>
+    <script src="lib/jquery-3.5.1.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
