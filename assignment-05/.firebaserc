@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "n423-data-class",
+    "data-class": "n423-data-class",
+    "assignment-05": "n423-assignment-05"
+  }
+}

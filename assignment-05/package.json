@@ -1,0 +1,12 @@
+{
+  "name": "assignment-05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve-local": "firebase serve --only hosting",
+    "deploy-without-functions": "firebase deploy --except functions"
+  },
+  "author": "",
+  "license": "ISC"
+}

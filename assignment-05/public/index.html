@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Firestore Query</title>
+
+    <style media="screen">
+      body {
+        background: #eceff1;
+        color: rgba(0, 0, 0, 0.87);
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      .hidden {
+        display: none;
+      }
+      #content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        background-color: #fff;
+        margin: 30px 0;
+      }
+      .album {
+        flex-grow: 1;
+        display: flex;
+        max-width: 500px;
+      }
+      .album img {
+        height: 150px;
+        width: auto;
+        padding: 20px;
+      }
+      .album .info {
+        padding: 10px 20px 0 0;
+      }
+      .album .info h2 {
+        margin-bottom: 0;
+        font-size: 23px;
+      }
+      .album .info p {
+        margin-bottom: 0;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Albums</h1>
+    <label for="genre">Select a genre:</label>
+    <select name="genre" id="genre">
+      <option value="All">All</option>
+      <option value="Rock">Rock</option>
+      <option value="Pop">Pop</option>
+      <option value="Ska">Ska</option>
+    </select>
+
+    <div id="content"></div>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.22.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.22.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.22.1/firebase-firestore.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="lib/jquery-3.5.1.js"></script>
+    <script type="module" src="model/model.js"></script>
+    <script type="module" src="app/app.js"></script>
+  </body>
+</html>
