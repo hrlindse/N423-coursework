@@ -13,6 +13,10 @@
         margin: 0;
         padding: 20px;
       }
+      .body {
+        margin: 0 auto;
+        max-width: 1600px;
+      }
       .hidden {
         display: none;
       }
@@ -24,9 +28,8 @@
         margin: 30px 0;
       }
       .album {
-        flex-grow: 1;
         display: flex;
-        max-width: 500px;
+        width: 400px;
       }
       .album img {
         height: 150px;
@@ -47,16 +50,18 @@
     </style>
   </head>
   <body>
-    <h1>Albums</h1>
-    <label for="genre">Select a genre:</label>
-    <select name="genre" id="genre">
-      <option value="All">All</option>
-      <option value="Rock">Rock</option>
-      <option value="Pop">Pop</option>
-      <option value="Ska">Ska</option>
-    </select>
+    <div class="body">
+      <h1>Albums</h1>
+      <label for="genre">Select a genre:</label>
+      <select name="genre" id="genre">
+        <option value="All">All</option>
+        <option value="Rock">Rock</option>
+        <option value="Pop">Pop</option>
+        <option value="Alternative">Alternative</option>
+      </select>
 
-    <div id="content"></div>
+      <div id="content"></div>
+    </div>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/7.22.1/firebase-app.js"></script>

@@ -47,7 +47,9 @@ export function getAlbumByGenre(genre) {
 }
 
 function showAlbums(querySnapshot) {
+    //empty container
   $("#content").html("");
+  //loop through data
   querySnapshot.forEach(function (doc) {
     let album = doc.data();
     $("#content").append(

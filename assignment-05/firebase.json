@@ -26,9 +26,6 @@
   "storage": {
     "rules": "storage.rules"
   },
-  "remoteconfig": {
-    "template": "remoteconfig.template.json"
-  },
   "emulators": {
     "functions": {
       "port": 5002
