@@ -14,6 +14,7 @@ var lname;
 var email;
 var password;
 var password2;
+var db = "";
 
 function SignUp() {
   let history = useHistory();
@@ -38,7 +39,7 @@ function SignUp() {
   console.log(password);
   console.log(password2);
 
-  var _db;
+  var loggedIn;
 
   const mySubmitHandler = (event) => {
     event.preventDefault();
@@ -50,17 +51,16 @@ function SignUp() {
         // ...
         loggedIn = false;
         console.log("No user");
-        _db = "";
+        db = "";
       }
     });
-    $("#add").removeClass("hidden");
 
     firebase
       .auth()
       .signInAnonymously()
       .then(function (result) {
-        _db = firebase.firestore();
-        callback();
+        db = firebase.firestore();
+        return <Redirect to="/home" />;
       });
     // firebase
     //   .auth()
@@ -159,4 +159,5 @@ function SignUp() {
   );
 }
 
+export { db };
 export default SignUp;

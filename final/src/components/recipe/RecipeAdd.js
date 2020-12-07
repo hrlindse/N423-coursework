@@ -6,6 +6,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import firebase from "firebase";
+import db from "../account/SignUp";
 
 function RecipeAdd() {
   let history = useHistory();
@@ -26,17 +27,19 @@ function RecipeAdd() {
 
   const mySubmitHandler = (event) => {
     event.preventDefault();
-    firebase
-      .auth()
-      .createUserWithEmailAndPassword(email, password)
-      .then((user) => {
-        // Signed in
-        return <Redirect to="/home" />;
+    db.collection("cities")
+      .doc("LA")
+      .set({
+        name: "Los Angeles",
+        state: "CA",
+        country: "USA",
       })
-      .catch((error) => {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // ..
+      .then(function () {
+        console.log("Document successfully written!");
+        return <Redirect to="/browse" />;
+      })
+      .catch(function (error) {
+        console.error("Error writing document: ", error);
       });
   };
   return (
@@ -52,45 +55,47 @@ function RecipeAdd() {
           <div className="fields">
             <input
               type="text"
-              id="fname"
-              name="fname"
-              placeholder="First Name"
-              onChange={(e) => setFname(e.target.value)}
+              id="title"
+              name="title"
+              placeholder="Enter Title"
+              onChange={(e) => setTitle(e.target.value)}
             />
             <br />
             <input
               type="text"
-              id="lname"
-              name="lname"
-              placeholder="Last Name"
-              onChange={(e) => setLname(e.target.value)}
+              id="source"
+              name="source"
+              placeholder="Enter Source (URL, Book, etc.)"
+              onChange={(e) => setSource(e.target.value)}
             />
             <br />
             <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              onChange={(e) => setEmail(e.target.value)}
+              type="text"
+              id="ingredients"
+              name="ingredients"
+              placeholder="Enter Ingredients"
+              height="50px"
+              onChange={(e) => setIngredients(e.target.value)}
             />
             <br />
             <input
-              type="password"
+              type="text"
               id="password"
               name="password"
-              placeholder="Password"
-              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter Directions"
+              height="50px"
+              onChange={(e) => setDirections(e.target.value)}
             />
             <br />
             <input
-              type="password"
+              type="text"
               id="confirmpass"
               name="confirmpass"
-              placeholder="Re-enter Password"
-              onChange={(e) => setPassword2(e.target.value)}
+              placeholder="Type of Cuisine"
+              onChange={(e) => setCuisine(e.target.value)}
             />
           </div>
-          <input type="submit" value="Sign up" />
+          <input type="submit" value="Save" />
         </form>
       </div>
     </div>

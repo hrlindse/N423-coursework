@@ -45,7 +45,7 @@ function App() {
   };
   return (
     <Router>
-      {/* <FirebaseAuthProvider firebase={firebase} {...config}>
+      <FirebaseAuthProvider firebase={firebase} {...config}>
         <FirebaseAuthConsumer>
           {({ isSignedIn, user, providerId }) => {
             return <Redirect to="/splashscreen" />;
@@ -65,7 +65,7 @@ function App() {
             }}
           </IfFirebaseAuthedAnd>
         </div>
-      </FirebaseAuthProvider> */}
+      </FirebaseAuthProvider>
       <div className="App">
         <Switch>
           <Route path="/account">
