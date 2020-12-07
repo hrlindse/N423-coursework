@@ -1,0 +1,64 @@
+.home {
+  .top {
+    background-color: $white;
+    color: $background;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    h1 {
+      margin-bottom: 5px;
+    }
+  }
+  a.button div#view-plan {
+    color: $white;
+    background-color: $background;
+    border: 3px solid $white;
+  }
+  #upcoming {
+    h2 {
+      padding: 0 20px;
+      font-weight: normal;
+      font-size: 28px;
+    }
+    .recipe {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      div.details {
+        background-color: $white;
+        color: $background;
+        width: 60%;
+        h3 {
+          font-size: 20px;
+          margin: 0;
+          padding: 8px 10px;
+        }
+        div.detail {
+          padding: 0 10px 10px;
+          .label {
+            font-style: italic;
+            padding-right: 20px;
+          }
+          span.detail {
+          }
+        }
+        a {
+          text-decoration: none;
+
+          div#view-details {
+            text-align: center;
+            background-color: $accent;
+            color: $white;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 3px 0 6px;
+          }
+        }
+      }
+    }
+    div.image {
+      width: 40%;
+    }
+  }
+}

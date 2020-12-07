@@ -1,0 +1,38 @@
+.splashscreen {
+  text-align: center;
+  .titles {
+    margin-top: 20vh;
+    .title {
+      font-size: 55px;
+      margin-bottom: 20px;
+    }
+    .subtitle {
+      font-size: 35px;
+    }
+  }
+  .buttons {
+    padding-top: 60px;
+    a.button {
+      text-decoration: none;
+      &:focus {
+        outline: none;
+        div#signup {
+          outline: none;
+          box-shadow: inset 0 0 10pt 2pt $darkaccent;
+        }
+        div#login {
+          outline: none;
+          box-shadow: inset 0 0 10pt 2pt $background;
+        }
+      }
+      div#signup {
+        background-color: $accent;
+        color: $white;
+      }
+      div#login {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+}

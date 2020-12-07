@@ -1,0 +1,78 @@
+@import "variables";
+@import "App";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  #root {
+    background-color: $background;
+    color: $white;
+    height: calc(100vh - 80px);
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 0;
+    }
+    a.button {
+      text-decoration: none;
+      &:focus {
+        outline: none;
+        div {
+          outline: none;
+          box-shadow: inset 0 0 10pt 2pt $background;
+        }
+      }
+      div {
+        text-decoration: none;
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+        border-radius: 30px;
+        padding: 5px 0 10px;
+        background-color: $white;
+        color: $background;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+
+    &.nonav {
+      height: 100vh;
+      nav {
+        display: none;
+      }
+    }
+    @media (orientation: landscape) {
+      max-width: 500px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      margin: 0 auto;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+      &::-webkit-scrollbar-track {
+        display: none;
+        background-color: $background;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        border-radius: 5px;
+        width: 0.7em;
+      }
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

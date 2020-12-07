@@ -1,0 +1,430 @@
+.splashscreen {
+  text-align: center;
+}
+
+.splashscreen .titles {
+  margin-top: 20vh;
+}
+
+.splashscreen .titles .title {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.splashscreen .titles .subtitle {
+  font-size: 35px;
+}
+
+.splashscreen .buttons {
+  padding-top: 60px;
+}
+
+.splashscreen .buttons a.button {
+  text-decoration: none;
+}
+
+.splashscreen .buttons a.button:focus {
+  outline: none;
+}
+
+.splashscreen .buttons a.button:focus div#signup {
+  outline: none;
+  -webkit-box-shadow: inset 0 0 10pt 2pt #c84e0c;
+          box-shadow: inset 0 0 10pt 2pt #c84e0c;
+}
+
+.splashscreen .buttons a.button:focus div#login {
+  outline: none;
+  -webkit-box-shadow: inset 0 0 10pt 2pt #383f51;
+          box-shadow: inset 0 0 10pt 2pt #383f51;
+}
+
+.splashscreen .buttons a.button div#signup {
+  background-color: #fa9f42;
+  color: #ffffff;
+}
+
+.splashscreen .buttons a.button div#login {
+  background-color: #ffffff;
+  color: #2b2b2b;
+}
+
+.account {
+  padding: 10px;
+  text-align: center;
+}
+
+.home .top {
+  background-color: #ffffff;
+  color: #383f51;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .top h1 {
+  margin-bottom: 5px;
+}
+
+.home a.button div#view-plan {
+  color: #ffffff;
+  background-color: #383f51;
+  border: 3px solid #ffffff;
+}
+
+.home #upcoming h2 {
+  padding: 0 20px;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.home #upcoming .recipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.home #upcoming .recipe div.details {
+  background-color: #ffffff;
+  color: #383f51;
+  width: 60%;
+}
+
+.home #upcoming .recipe div.details h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 8px 10px;
+}
+
+.home #upcoming .recipe div.details div.detail {
+  padding: 0 10px 10px;
+}
+
+.home #upcoming .recipe div.details div.detail .label {
+  font-style: italic;
+  padding-right: 20px;
+}
+
+.home #upcoming .recipe div.details a {
+  text-decoration: none;
+}
+
+.home #upcoming .recipe div.details a div#view-details {
+  text-align: center;
+  background-color: #fa9f42;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 3px 0 6px;
+}
+
+.home #upcoming div.image {
+  width: 40%;
+}
+
+.menu {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu ion-icon {
+  font-size: 60px;
+  color: #ffffff;
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+
+@media (orientation: landscape) {
+  .menu ion-icon {
+    position: relative;
+    margin-bottom: -20px;
+    top: -9%;
+    left: -46%;
+  }
+}
+
+.menu .popout {
+  color: #2b2b2b;
+  background-color: #ffffff;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  margin: 35px 0;
+}
+
+.menu .popout h1 {
+  margin: 0;
+  padding: 18px 20px 0;
+  text-align: center;
+}
+
+.menu .popout form .fields {
+  padding: 15px 20px;
+}
+
+.menu .popout form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 20px;
+  padding: 8px;
+}
+
+.menu .popout form input::-webkit-input-placeholder {
+  color: #636363;
+}
+
+.menu .popout form input:-ms-input-placeholder {
+  color: #636363;
+}
+
+.menu .popout form input::-ms-input-placeholder {
+  color: #636363;
+}
+
+.menu .popout form input::placeholder {
+  color: #636363;
+}
+
+.menu .popout form input[type="submit"] {
+  margin-bottom: 0;
+  border: none;
+  background-color: #fa9f42;
+  color: #ffffff;
+  border-radius: 0 0 30px 30px;
+  height: 65px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.menu .popout form input[type="submit"]:focus {
+  border-radius: 0 0 30px 30px;
+  outline: none;
+  -webkit-box-shadow: inset 0 0 10pt 2pt #c84e0c;
+          box-shadow: inset 0 0 10pt 2pt #c84e0c;
+}
+
+.menu .popout + .below {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu .popout + .below a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
+  padding-bottom: 30px;
+}
+
+.App {
+  height: 100%;
+}
+
+.App nav {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  height: 80px;
+}
+
+@media (orientation: landscape) {
+  .App nav {
+    max-width: 500px;
+  }
+}
+
+.App nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: #383f51;
+  padding: 0;
+  margin: 0;
+}
+
+.App nav ul li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.App nav ul li a {
+  font-weight: bold;
+  color: #383f51;
+  text-decoration: none;
+}
+
+.App nav ul li a.active {
+  background-color: #383f51;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+.App nav ul li a.active div {
+  background-color: #383f51;
+}
+
+.App nav ul li a div {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App nav ul li a div ion-icon {
+  font-size: 11vw;
+}
+
+.App nav ul li a div ion-icon[name="add"] {
+  font-weight: bold;
+  font-size: 15vw;
+  --ionicon-stroke-width: 66px;
+}
+
+@media (min-width: 500px) {
+  .App nav ul li a div ion-icon[name="add"] {
+    font-size: 75px;
+  }
+}
+
+@media (min-width: 500px) {
+  .App nav ul li a div ion-icon {
+    font-size: 55px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body #root {
+  background-color: #383f51;
+  color: #ffffff;
+  height: calc(100vh - 80px);
+}
+
+body #root h1,
+body #root h2,
+body #root h3,
+body #root h4,
+body #root h5,
+body #root h6 {
+  margin-top: 0;
+}
+
+body #root a.button {
+  text-decoration: none;
+}
+
+body #root a.button:focus {
+  outline: none;
+}
+
+body #root a.button:focus div {
+  outline: none;
+  -webkit-box-shadow: inset 0 0 10pt 2pt #383f51;
+          box-shadow: inset 0 0 10pt 2pt #383f51;
+}
+
+body #root a.button div {
+  text-decoration: none;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 30px;
+  padding: 5px 0 10px;
+  background-color: #ffffff;
+  color: #383f51;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+body #root.nonav {
+  height: 100vh;
+}
+
+body #root.nonav nav {
+  display: none;
+}
+
+@media (orientation: landscape) {
+  body #root {
+    max-width: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0 auto;
+  }
+  body #root::-webkit-scrollbar {
+    width: 0;
+  }
+  body #root::-webkit-scrollbar-track {
+    display: none;
+    background-color: #383f51;
+  }
+  body #root::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 5px;
+    width: 0.7em;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+/*# sourceMappingURL=index.css.map */
