@@ -38,20 +38,42 @@ function SignUp() {
   console.log(password);
   console.log(password2);
 
+  var _db;
+
   const mySubmitHandler = (event) => {
     event.preventDefault();
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        console.log("There is a user");
+      } else {
+        // User is signed out.
+        // ...
+        loggedIn = false;
+        console.log("No user");
+        _db = "";
+      }
+    });
+    $("#add").removeClass("hidden");
+
     firebase
       .auth()
-      .createUserWithEmailAndPassword(email, password)
-      .then((user) => {
-        // Signed in
-        return <Redirect to="/home" />;
-      })
-      .catch((error) => {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // ..
+      .signInAnonymously()
+      .then(function (result) {
+        _db = firebase.firestore();
+        callback();
       });
+    // firebase
+    //   .auth()
+    //   .createUserWithEmailAndPassword(email, password)
+    //   .then((user) => {
+    //     // Signed in
+    //     return <Redirect to="/home" />;
+    //   })
+    //   .catch((error) => {
+    //     var errorCode = error.code;
+    //     var errorMessage = error.message;
+    //     // ..
+    //   });
     // .then((result) => {
     //   if (result.user) {
     //     result.user
