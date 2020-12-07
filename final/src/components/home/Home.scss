@@ -1,4 +1,5 @@
-.home {
+.home,
+.browse {
   .top {
     background-color: $white;
     color: $background;
@@ -15,7 +16,8 @@
     background-color: $background;
     border: 3px solid $white;
   }
-  #upcoming {
+  #upcoming,
+  #recipes {
     h2 {
       padding: 0 20px;
       font-weight: normal;

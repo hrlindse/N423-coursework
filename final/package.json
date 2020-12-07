@@ -2,7 +2,6 @@
   "name": "final",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hrlindse.github.io/N423-coursework/final/public",
   "dependencies": {
     "@react-firebase/auth": "^0.2.10",
     "@testing-library/jest-dom": "^5.11.6",

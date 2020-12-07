@@ -54,7 +54,8 @@
   text-align: center;
 }
 
-.home .top {
+.home .top,
+.browse .top {
   background-color: #ffffff;
   color: #383f51;
   height: 80px;
@@ -69,23 +70,31 @@
   display: flex;
 }
 
-.home .top h1 {
+.home .top h1,
+.browse .top h1 {
   margin-bottom: 5px;
 }
 
-.home a.button div#view-plan {
+.home a.button div#view-plan,
+.browse a.button div#view-plan {
   color: #ffffff;
   background-color: #383f51;
   border: 3px solid #ffffff;
 }
 
-.home #upcoming h2 {
+.home #upcoming h2,
+.home #recipes h2,
+.browse #upcoming h2,
+.browse #recipes h2 {
   padding: 0 20px;
   font-weight: normal;
   font-size: 28px;
 }
 
-.home #upcoming .recipe {
+.home #upcoming .recipe,
+.home #recipes .recipe,
+.browse #upcoming .recipe,
+.browse #recipes .recipe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,32 +105,50 @@
   width: 100%;
 }
 
-.home #upcoming .recipe div.details {
+.home #upcoming .recipe div.details,
+.home #recipes .recipe div.details,
+.browse #upcoming .recipe div.details,
+.browse #recipes .recipe div.details {
   background-color: #ffffff;
   color: #383f51;
   width: 60%;
 }
 
-.home #upcoming .recipe div.details h3 {
+.home #upcoming .recipe div.details h3,
+.home #recipes .recipe div.details h3,
+.browse #upcoming .recipe div.details h3,
+.browse #recipes .recipe div.details h3 {
   font-size: 20px;
   margin: 0;
   padding: 8px 10px;
 }
 
-.home #upcoming .recipe div.details div.detail {
+.home #upcoming .recipe div.details div.detail,
+.home #recipes .recipe div.details div.detail,
+.browse #upcoming .recipe div.details div.detail,
+.browse #recipes .recipe div.details div.detail {
   padding: 0 10px 10px;
 }
 
-.home #upcoming .recipe div.details div.detail .label {
+.home #upcoming .recipe div.details div.detail .label,
+.home #recipes .recipe div.details div.detail .label,
+.browse #upcoming .recipe div.details div.detail .label,
+.browse #recipes .recipe div.details div.detail .label {
   font-style: italic;
   padding-right: 20px;
 }
 
-.home #upcoming .recipe div.details a {
+.home #upcoming .recipe div.details a,
+.home #recipes .recipe div.details a,
+.browse #upcoming .recipe div.details a,
+.browse #recipes .recipe div.details a {
   text-decoration: none;
 }
 
-.home #upcoming .recipe div.details a div#view-details {
+.home #upcoming .recipe div.details a div#view-details,
+.home #recipes .recipe div.details a div#view-details,
+.browse #upcoming .recipe div.details a div#view-details,
+.browse #recipes .recipe div.details a div#view-details {
   text-align: center;
   background-color: #fa9f42;
   color: #ffffff;
@@ -130,7 +157,10 @@
   padding: 3px 0 6px;
 }
 
-.home #upcoming div.image {
+.home #upcoming div.image,
+.home #recipes div.image,
+.browse #upcoming div.image,
+.browse #recipes div.image {
   width: 40%;
 }
 

@@ -25,110 +25,11 @@ import SignUp from "./components/account/SignUp";
 import Login from "./components/account/Login";
 import Add from "./components/menus/Add";
 import PlanAdd from "./components/menus/PlanAdd";
+import RecipeAdd from "./components/recipe/RecipeAdd";
+import MealPlanAdd from "./components/recipe/MealPlanAdd";
+import Browse from "./components/recipeBook/Browse";
+import Search from "./components/recipeSearch/Search";
 import ForgotPassword from "./components/account/ForgotPassword";
-
-// function initFirebase() {
-//   firebase
-//     .auth()
-//     .signInAnonymously()
-//     .then(function (result) {
-//       firebase.auth().onAuthStateChanged(function (user) {
-//         if (user) {
-//           console.log("user signed in");
-//           // User is signed in.
-//           var displayName = user.displayName;
-//           var email = user.email;
-//           var emailVerified = user.emailVerified;
-//           var photoURL = user.photoURL;
-//           var isAnonymous = user.isAnonymous;
-//           var uid = user.uid;
-//           var providerData = user.providerData;
-//           console.log("user:", displayName, email, user);
-//           loggedIn = true;
-//           _db = firebase.firestore();
-//           // ...
-//         } else {
-//           // User is signed out.
-//           // ...
-//           loggedIn = false;
-//           console.log("user not signed in");
-//         }
-//       });
-//       console.log("connected");
-//     });
-// }
-
-// function initListeners() {
-//   $("#add").click(function () {
-//     if (loggedIn) {
-//       _db
-//         .collection("names")
-//         .add(fakeNews)
-//         .then(function (doc) {
-//           console.log("Added Data, ref num: ", doc.id);
-//         });
-//     } else console.log("log in to add data");
-//   });
-
-//   $("#signup").click(function () {
-//     let email = "email@email.com";
-//     let password = "password";
-//     firebase
-//       .auth()
-//       .createUserWithEmailAndPassword(email, password)
-//       .then((result) => {
-//         if (result.user) {
-//           result.user
-//             .updateProfile({
-//               displayName: "Jane Q. User",
-//               photoURL: "https://example.com/jane-q-user/profile.jpg",
-//             })
-//             .then(function () {
-//               // Update successful.
-//             })
-//             .catch(function (error) {
-//               // An update error happened.
-//             });
-//         }
-//       })
-//       .catch(function (error) {
-//         // Handle Errors here.
-//         var errorCode = error.code;
-//         var errorMessage = error.message;
-//         // ...
-//       });
-//   });
-
-//   $("#logout").click(function () {
-//     firebase
-//       .auth()
-//       .signOut()
-//       .then(function () {
-//         // Sign-out successful.
-//         console.log("Log Out");
-//         _db = "";
-//       })
-//       .catch(function (error) {
-//         // An error happened.
-//         console.log("Log Out error");
-//       });
-//   });
-
-//   $("#login").click(function () {
-//     let email = "email@email.com";
-//     let password = "password";
-//     console.log("Log In");
-//     firebase
-//       .auth()
-//       .signInWithEmailAndPassword(email, password)
-//       .catch(function (error) {
-//         // Handle Errors here.
-//         var errorCode = error.code;
-//         var errorMessage = error.message;
-//         // ...
-//       });
-//   });
-// }
 
 function App() {
   const firebaseApp = firebase.apps[0];
@@ -144,7 +45,7 @@ function App() {
   };
   return (
     <Router>
-      <FirebaseAuthProvider firebase={firebase} {...config}>
+      {/* <FirebaseAuthProvider firebase={firebase} {...config}>
         <FirebaseAuthConsumer>
           {({ isSignedIn, user, providerId }) => {
             return <Redirect to="/splashscreen" />;
@@ -164,7 +65,7 @@ function App() {
             }}
           </IfFirebaseAuthedAnd>
         </div>
-      </FirebaseAuthProvider>
+      </FirebaseAuthProvider> */}
       <div className="App">
         <Switch>
           <Route path="/account">
@@ -193,6 +94,18 @@ function App() {
           </Route>
           <Route path="/planadd">
             <PlanAdd />
+          </Route>
+          <Route path="/browse">
+            <Browse />
+          </Route>
+          <Route path="/search">
+            <Search />
+          </Route>
+          <Route path="/recipeadd">
+            <RecipeAdd />
+          </Route>
+          <Route path="/mealplanadd">
+            <MealPlanAdd />
           </Route>
           <Route path="/">
             <Home />
@@ -223,7 +136,7 @@ function App() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/plan" activeClassName="active">
+              <NavLink to="/browse" activeClassName="active">
                 <div>
                   <ion-icon name="book"></ion-icon>
                 </div>
